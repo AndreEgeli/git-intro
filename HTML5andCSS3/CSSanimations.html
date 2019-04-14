@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Learn HTML5 og CSS3</title>
+      <style>
+        #div1{
+          background: orange;
+          border: 5px solid black;
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+          animation: anim1 5s;
+        }
+
+        @keyframes anim1 {
+          from {background: orange;}
+          to{background: red;}
+        }
+        #div2{
+          background: orange;
+          border: 5px solid black;
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+          animation: anim2 5s;
+        }
+
+        @keyframes anim2 {
+          0% {background: orange;}
+          25% {background: red;}
+          50% {background: brown;}
+          100% {background: white;}
+        }
+
+        #div3{
+          background: orange;
+          border: 5px solid black;
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+          animation: anim3 5s;
+          border-radius: 0;
+          animation-iteration-count: 1;
+          animation-timing-function: linear;
+        }
+
+        @keyframes anim3 {
+          0% {background: orange; width: 200px; border-radius: 0;}
+          25% {background: red; width: 300px; border-radius: 10px;}
+          40% {background: brown; width: 400px; border-radius: 50px;}
+          70% {background: white; width: 300px; border-radius: 100px;}
+          100% {background: orange; width: 200px;}
+        }
+
+      </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+  </body>
+</html>
